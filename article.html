@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article</title>
+  <link rel="stylesheet" href=".\ccb.css">
+
+</head>
+
+<body>
+  <custom-header>
+    <div class="logo ">
+      <button class="menu-toggle transparent">≡</button>
+      <span class="logo">
+        <span class="logo-item">C</span>
+        <span class="logo-item">C</span>
+        <span class="logo-item">B</span>
+      </span>
+      <button class="dialog-search transparent">🔍</button>
+    </div>
+    <dialog>
+      <button class="close-btn">🗙</button>
+      <h1>Search</h1>
+      <input type="search" id="site-search" name="q">
+      <template>
+        <li>
+          <div class="main">
+            <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+            <div class="flex flex-col justify-between">
+              <h5 class="item-title">{value}</h5>
+              <p class="item-description">
+              </p>
+              <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200" />
+              <ul id="search-results">
+              </ul>
+            </div>
+          </div>
+        </li>
+      </template>
+    </dialog>
+    <div class="toolbar">
+      <ul class="toolbar">
+        <li><a href="./index.html" class="item-toolbar">Home</a></li>
+        <li><a href="sections/news.html" class="item-toolbar">News</a></li>
+        <li><a href="sections/sport.html" class="item-toolbar">Sport</a></li>
+        <li><a href="sections/business.html" class="item-toolbar">Business</a></li>
+        <li><a href="sections/innovation.html" class="item-toolbar">Innovation</a></li>
+        <li><a href="sections/culture.html" class="item-toolbar">Culture</a></li>
+        <li><a href="sections/arts.html" class="item-toolbar">Arts</a></li>
+        <li><a href="sections/travel.html" class="item-toolbar">Travel</a></li>
+      </ul>
+    </div>
+  </custom-header>
+  <main>
+    <custom-article>
+      <article class="block">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h1>
+        <img src="https://placehold.co/768x400/EEE/31343C" class="items"> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <relative-time time="1729250766363"></relative-time>
+      </article>
+    </custom-article>
+
+  </main>
+
+
+</body>
+
+</html>
+
+<script src=".\ccb.js"></script>

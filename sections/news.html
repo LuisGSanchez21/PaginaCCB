@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\ccb.css">
+</head>
+<body>
+  <custom-search>
+    <div class="logo ">
+        <button onclick="showHideSidebar()" id="menu-toggle" class="menu-toggle transparent">≡</button>
+        <span class="logo">
+            <span class="logo-item">C</span>
+            <span class="logo-item">C</span>
+            <span class="logo-item">B</span>
+        </span>
+        <button class="dialog-search transparent">🔍</button>
+    </div>
+    <dialog>
+        <button class="close-btn">🗙</button>
+        <h1>Search</h1>
+        <input type="search" id="site-search" name="q">
+        <template>
+            <li>
+                <div class="main">
+                    <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg" />
+                    <div class="flex flex-col justify-between">
+                        <h5 class="item-title">{value}</h5>
+                        <p class="item-description">
+                        </p>
+                        <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200" />
+                        <ul id="search-results">
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </template>
+    </dialog>
+    </custom-search>
+
+    </dialog>
+    <div class="toolbar">
+        <ul class="toolbar">
+            <li><a href="../index.html" class="item-toolbar">Home</a></li>
+            <li><a href="news.html" class="item-toolbar">News</a></li>
+            <li><a href="sport.html" class="item-toolbar">Sport</a></li>
+            <li><a href="business.html" class="item-toolbar">Business</a></li>
+            <li><a href="innovation.html" class="item-toolbar">Innovation</a></li>
+            <li><a href="culture.html" class="item-toolbar">Culture</a></li>
+            <li><a href="arts.html" class="item-toolbar">Arts</a></li>
+            <li><a href="travel.html" class="item-toolbar">Travel</a></li>
+        </ul>
+    </div>
+
+
+    <sidebar class="menu-sidebar hidden" id="menu-sidebar">
+        <div>
+            <ul>
+                <li><a href="../index.html" class="item-toolbar">Home</a></li>
+                <li><a href="news.html" class="item-toolbar">News</a></li>
+                <li><a href="sport.html" class="item-toolbar">Sport</a></li>
+                <li><a href="business.html" class="item-toolbar">Business</a></li>
+                <li><a href="innovation.html" class="item-toolbar">Innovation</a></li>
+                <li><a href="culture.html" class="item-toolbar">Culture</a></li>
+                <li><a href="arts.html" class="item-toolbar">Arts</a></li>
+                <li><a href="travel.html" class="item-toolbar">Travel</a></li>
+            </ul>
+        </div>
+    </sidebar>
+    <main class="flex">
+        <div class="grid-container">
+          <custom-article class="grid-item text-left">
+            <article>
+              <h1 class="tittle">
+                <a href="../article.html?id=7">Global Economic Update: Markets Surge Amid Recovery Hopes</a>
+              </h1>
+              <relative-time time="Wed Oct 11 2024 14:54:36 GMT+0200"></relative-time>
+              <img class="img" src="elements/economy-update.jpg" alt="Economy Update Image">
+              <p>Stock markets worldwide are experiencing unprecedented growth as investors remain optimistic about global economic recovery.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <h1 class="tittle">
+                <a href="../article.html?id=8">International Climate Summit 2024: Key Takeaways</a>
+              </h1>
+              <relative-time time="Mon Oct 09 2024 09:20:15 GMT+0200"></relative-time>
+              <img class="img" src="elements/climate-summit.jpg" alt="Climate Summit Image">
+              <p>The latest climate summit brought leaders together to discuss policies and actions to combat climate change. Here are the highlights and commitments made.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=9">
+                <h1 class="tittle">Tech Giants Face New Regulations in Europe</h1>
+              </a>
+              <relative-time time="Thu Oct 05 2024 17:30:12 GMT+0200"></relative-time>
+              <img class="img" src="elements/tech-regulation.jpg" alt="Tech Regulation Image">
+              <p>European regulators are introducing new policies aimed at increasing data privacy and limiting monopolistic practices by large tech firms.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=10">
+                <h1 class="tittle">Healthcare Advancements: New Vaccine Approved</h1>
+              </a>
+              <relative-time time="Sat Oct 07 2024 11:54:03 GMT+0200"></relative-time>
+              <img class="img" src="elements/healthcare-vaccine.jpg" alt="Healthcare Vaccine Image">
+              <p>A new vaccine has been approved, marking a significant step in the fight against seasonal illnesses. Find out what this means for public health.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=11">
+                <h1 class="tittle">Renewable Energy Initiatives See Record Investment</h1>
+              </a>
+              <relative-time time="Wed Oct 02 2024 08:12:00 GMT+0200"></relative-time>
+              <img class="img" src="elements/renewable-energy.jpg" alt="Renewable Energy Image">
+              <p>Investors are increasingly turning to renewable energy projects, setting new records for funding and bringing innovation to the energy sector.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=12">
+                <h1 class="tittle">Space Agency Announces Mars Mission Plans</h1>
+              </a>
+              <relative-time time="Tue Sep 30 2024 15:40:29 GMT+0200"></relative-time>
+              <img class="img" src="elements/mars-mission.jpg" alt="Mars Mission Image">
+              <p>Excitement builds as a new Mars mission is announced, with a projected launch in 2026. Explore the mission’s objectives and technology advancements.</p>
+            </article>
+          </custom-article>
+        </div>
+      </main>
+      
+</body>
+</html>
+<script src="..\ccb.js"></script>

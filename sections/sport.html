@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\ccb.css">
+</head>
+<body>
+    <custom-search>
+        <div class="logo ">
+            <button onclick="showHideSidebar()" id="menu-toggle" class="menu-toggle transparent">≡</button>
+            <span class="logo">
+                <span class="logo-item">C</span>
+                <span class="logo-item">C</span>
+                <span class="logo-item">B</span>
+            </span>
+            <button class="dialog-search transparent">🔍</button>
+        </div>
+        <dialog>
+            <button class="close-btn">🗙</button>
+            <h1>Search</h1>
+            <input type="search" id="site-search" name="q">
+            <template>
+                <li>
+                    <div class="main">
+                        <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg" />
+                        <div class="flex flex-col justify-between">
+                            <h5 class="item-title">{value}</h5>
+                            <p class="item-description">
+                            </p>
+                            <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200" />
+                            <ul id="search-results">
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </template>
+        </dialog>
+        </custom-search>
+
+        </dialog>
+        <div class="toolbar">
+            <ul class="toolbar">
+                <li><a href="../index.html" class="item-toolbar">Home</a></li>
+                <li><a href="news.html" class="item-toolbar">News</a></li>
+                <li><a href="sport.html" class="item-toolbar">Sport</a></li>
+                <li><a href="business.html" class="item-toolbar">Business</a></li>
+                <li><a href="innovation.html" class="item-toolbar">Innovation</a></li>
+                <li><a href="culture.html" class="item-toolbar">Culture</a></li>
+                <li><a href="arts.html" class="item-toolbar">Arts</a></li>
+                <li><a href="travel.html" class="item-toolbar">Travel</a></li>
+            </ul>
+        </div>
+
+    <sidebar class="menu-sidebar hidden" id="menu-sidebar">
+        <div>
+            <ul>
+                <li><a href="../index.html" class="item-toolbar">Home</a></li>
+                <li><a href="news.html" class="item-toolbar">News</a></li>
+                <li><a href="sport.html" class="item-toolbar">Sport</a></li>
+                <li><a href="business.html" class="item-toolbar">Business</a></li>
+                <li><a href="innovation.html" class="item-toolbar">Innovation</a></li>
+                <li><a href="culture.html" class="item-toolbar">Culture</a></li>
+                <li><a href="arts.html" class="item-toolbar">Arts</a></li>
+                <li><a href="travel.html" class="item-toolbar">Travel</a></li>
+            </ul>
+        </div>
+    </sidebar>
+    <main class="flex">
+        <div class="grid-container">
+          <custom-article class="grid-item text-left">
+            <article>
+              <h1 class="tittle">
+                <a href="../article.html?id=13">Champions League: Stunning Comeback Leads to Final Victory</a>
+              </h1>
+              <relative-time time="Tue Oct 10 2024 21:15:36 GMT+0200"></relative-time>
+              <img class="img" src="elements/champions-league.jpg" alt="Champions League Image">
+              <p>A dramatic comeback in the final minutes of the match has led one team to claim the Champions League title in an unforgettable showdown.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <h1 class="tittle">
+                <a href="../article.html?id=14">Olympic Games 2024: New Records and Triumphs</a>
+              </h1>
+              <relative-time time="Wed Oct 09 2024 14:00:15 GMT+0200"></relative-time>
+              <img class="img" src="elements/olympic-games.jpg" alt="Olympic Games Image">
+              <p>The 2024 Olympics have seen new world records in track and field events, with athletes from around the world showcasing peak performance and resilience.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=15">
+                <h1 class="tittle">World Cup Qualifiers: Teams Secure Their Spots</h1>
+              </a>
+              <relative-time time="Mon Oct 08 2024 17:45:12 GMT+0200"></relative-time>
+              <img class="img" src="elements/world-cup.jpg" alt="World Cup Qualifiers Image">
+              <p>National teams have battled it out in the World Cup qualifiers, with several now securing spots in the upcoming tournament.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=16">
+                <h1 class="tittle">Tennis Grand Slam: Rising Star Claims First Title</h1>
+              </a>
+              <relative-time time="Sun Oct 07 2024 18:30:03 GMT+0200"></relative-time>
+              <img class="img" src="elements/tennis-grand-slam.jpg" alt="Tennis Grand Slam Image">
+              <p>A young tennis star has captured their first Grand Slam title, impressing audiences worldwide with skill and determination on the court.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href=".../article.html?id=17">
+                <h1 class="tittle">Formula 1: A Thrilling Finish to the Latest Grand Prix</h1>
+              </a>
+              <relative-time time="Fri Oct 05 2024 16:25:00 GMT+0200"></relative-time>
+              <img class="img" src="elements/formula-1.jpg" alt="Formula 1 Grand Prix Image">
+              <p>The latest Formula 1 Grand Prix concluded with a nail-biting finish, as drivers battled through the final laps to determine the winner.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=18">
+                <h1 class="tittle">Marathon Breaks Records in Major City Event</h1>
+              </a>
+              <relative-time time="Thu Oct 03 2024 09:40:29 GMT+0200"></relative-time>
+              <img class="img" src="elements/marathon.jpg" alt="Marathon Image">
+              <p>A new marathon record was set as thousands of runners hit the streets, pushing their limits and setting personal bests in a major city event.</p>
+            </article>
+          </custom-article>
+        </div>
+      </main>
+      
+</body>
+</html>
+<script src="..\ccb.js"></script>

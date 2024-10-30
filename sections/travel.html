@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\ccb.css">
+</head>
+<body>
+    <custom-search>
+        <div class="logo ">
+            <button onclick="showHideSidebar()" id="menu-toggle" class="menu-toggle transparent">≡</button>
+            <span class="logo">
+                <span class="logo-item">C</span>
+                <span class="logo-item">C</span>
+                <span class="logo-item">B</span>
+            </span>
+            <button class="dialog-search transparent">🔍</button>
+        </div>
+        <dialog>
+            <button class="close-btn">🗙</button>
+            <h1>Search</h1>
+            <input type="search" id="site-search" name="q">
+            <template>
+                <li>
+                    <div class="main">
+                        <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg" />
+                        <div class="flex flex-col justify-between">
+                            <h5 class="item-title">{value}</h5>
+                            <p class="item-description">
+                            </p>
+                            <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200" />
+                            <ul id="search-results">
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </template>
+        </dialog>
+        </custom-search>
+
+        </dialog>
+        <div class="toolbar">
+            <ul class="toolbar">
+                <li><a href="../index.html" class="item-toolbar">Home</a></li>
+                <li><a href="news.html" class="item-toolbar">News</a></li>
+                <li><a href="sport.html" class="item-toolbar">Sport</a></li>
+                <li><a href="business.html" class="item-toolbar">Business</a></li>
+                <li><a href="innovation.html" class="item-toolbar">Innovation</a></li>
+                <li><a href="culture.html" class="item-toolbar">Culture</a></li>
+                <li><a href="arts.html" class="item-toolbar">Arts</a></li>
+                <li><a href="travel.html" class="item-toolbar">Travel</a></li>
+            </ul>
+        </div>
+
+    <sidebar class="menu-sidebar hidden" id="menu-sidebar">
+        <div>
+            <ul>
+                <li><a href="../index.html" class="item-toolbar">Home</a></li>
+                <li><a href="news.html" class="item-toolbar">News</a></li>
+                <li><a href="sport.html" class="item-toolbar">Sport</a></li>
+                <li><a href="business.html" class="item-toolbar">Business</a></li>
+                <li><a href="innovation.html" class="item-toolbar">Innovation</a></li>
+                <li><a href="culture.html" class="item-toolbar">Culture</a></li>
+                <li><a href="arts.html" class="item-toolbar">Arts</a></li>
+                <li><a href="travel.html" class="item-toolbar">Travel</a></li>
+            </ul>
+        </div>
+    </sidebar>
+    <main class="flex">
+        <div class="grid-container">
+          <custom-article class="grid-item text-left">
+            <article>
+              <h1 class="tittle">
+                <a href="../article.html?id=43">Top Winter Destinations for 2024 Revealed</a>
+              </h1>
+              <relative-time time="Wed Oct 11 2024 10:30:21 GMT+0200"></relative-time>
+              <img class="img" src="elements/winter-destinations.jpg" alt="Winter Destinations Image">
+              <p>As the colder months approach, discover the best winter travel spots of 2024, featuring scenic snow-covered landscapes and cozy getaways.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <h1 class="tittle">
+                <a href="../article.html?id=44">Exploring the Hidden Gems of Southeast Asia</a>
+              </h1>
+              <relative-time time="Tue Oct 10 2024 08:15:45 GMT+0200"></relative-time>
+              <img class="img" src="elements/southeast-asia.jpg" alt="Southeast Asia Image">
+              <p>From secluded beaches to vibrant markets, Southeast Asia offers incredible off-the-beaten-path experiences for travelers seeking adventure.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=45">
+                <h1 class="tittle">Why Solo Travel is Booming in 2024</h1>
+              </a>
+              <relative-time time="Mon Oct 09 2024 17:00:12 GMT+0200"></relative-time>
+              <img class="img" src="elements/solo-travel.jpg" alt="Solo Travel Image">
+              <p>The rise of solo travel continues in 2024, as individuals worldwide seek independence and personal growth through unique travel experiences.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=46">
+                <h1 class="tittle">The Best Eco-Friendly Resorts to Visit</h1>
+              </a>
+              <relative-time time="Sun Oct 08 2024 14:45:03 GMT+0200"></relative-time>
+              <img class="img" src="elements/eco-resorts.jpg" alt="Eco-Friendly Resorts Image">
+              <p>Explore stunning eco-resorts that offer luxurious accommodations while committing to sustainability and environmental preservation.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=47">
+                <h1 class="tittle">City Guides: Discovering Tokyo Beyond the Usual Spots</h1>
+              </a>
+              <relative-time time="Fri Oct 06 2024 19:25:00 GMT+0200"></relative-time>
+              <img class="img" src="elements/tokyo.jpg" alt="Tokyo City Image">
+              <p>A guide to Tokyo’s hidden neighborhoods and unique experiences that take travelers beyond the well-known tourist attractions.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=48">
+                <h1 class="tittle">Backpacking Through South America's Natural Wonders</h1>
+              </a>
+              <relative-time time="Thu Oct 05 2024 09:30:29 GMT+0200"></relative-time>
+              <img class="img" src="elements/south-america.jpg" alt="South America Backpacking Image">
+              <p>Journey through South America’s breathtaking paradise</p>
+            </article>
+          </custom-article>
+        </div>
+    </main>
+
+      
+</body>
+</html>
+<script src="..\ccb.js"></script>

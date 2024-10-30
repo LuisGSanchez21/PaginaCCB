@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\ccb.css">
+</head>
+<body>
+    <custom-header>
+        <div class="logo ">
+            <button onclick="showHideSidebar()" id="menu-toggle" class="menu-toggle transparent">≡</button>
+            <span class="logo">
+                <span class="logo-item">C</span>
+                <span class="logo-item">C</span>
+                <span class="logo-item">B</span>
+            </span>
+            <button class="dialog-search transparent">🔍</button>
+        </div>
+        <dialog>
+            <button class="close-btn">🗙</button>
+            <h1>Search</h1>
+            <input type="search" id="site-search" name="q">
+            <template>
+                <li>
+                    <div class="main">
+                        <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg" />
+                        <div class="flex flex-col justify-between">
+                            <h5 class="item-title">{value}</h5>
+                            <p class="item-description">
+                            </p>
+                            <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200" />
+                            <ul id="search-results">
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </template>
+        </dialog>
+        </custom-header>
+
+        </dialog>
+        <div class="toolbar">
+            <ul class="toolbar">
+                <li><a href="../index.html" class="item-toolbar">Home</a></li>
+                <li><a href="news.html" class="item-toolbar">News</a></li>
+                <li><a href="sport.html" class="item-toolbar">Sport</a></li>
+                <li><a href="business.html" class="item-toolbar">Business</a></li>
+                <li><a href="innovation.html" class="item-toolbar">Innovation</a></li>
+                <li><a href="culture.html" class="item-toolbar">Culture</a></li>
+                <li><a href="arts.html" class="item-toolbar">Arts</a></li>
+                <li><a href="travel.html" class="item-toolbar">Travel</a></li>
+            </ul>
+        </div>
+
+
+    <sidebar class="menu-sidebar hidden" id="menu-sidebar">
+        <div>
+            <ul>
+                <li><a href="../index.html" class="item-toolbar">Home</a></li>
+                <li><a href="news.html" class="item-toolbar">News</a></li>
+                <li><a href="sport.html" class="item-toolbar">Sport</a></li>
+                <li><a href="business.html" class="item-toolbar">Business</a></li>
+                <li><a href="innovation.html" class="item-toolbar">Innovation</a></li>
+                <li><a href="culture.html" class="item-toolbar">Culture</a></li>
+                <li><a href="arts.html" class="item-toolbar">Arts</a></li>
+                <li><a href="travel.html" class="item-toolbar">Travel</a></li>
+            </ul>
+        </div>
+    </sidebar>
+    <main class="flex">
+        <div class="grid-container">
+          <custom-article class="grid-item text-left">
+            <article>
+              <h1 class="tittle">
+                <a href="../article.html?id=37">The Renaissance Resurgence in Modern Art</a>
+              </h1>
+              <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200"></relative-time>
+              <img class="img" src="elements/renaissance.jpg" alt="Renaissance Art Image">
+              <p>Artists today are drawing inspiration from Renaissance techniques, bringing classical artistry to contemporary forms. Learn how this movement is influencing the modern art scene.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <h1 class="tittle">
+                <a href="../article.html?id=38">Street Art’s Impact on Urban Identity</a>
+              </h1>
+              <relative-time time="Thu Oct 12 2024 09:32:12 GMT+0200"></relative-time>
+              <img class="img" src="elements/street-art.jpg" alt="Street Art Image">
+              <p>From graffiti to large murals, street art is transforming cities worldwide, giving communities a voice and identity through powerful visual narratives.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=39">
+                <h1 class="tittle">Exploring Art Therapy’s Benefits for Mental Health</h1>
+              </a>
+              <relative-time time="Mon Oct 09 2024 15:18:45 GMT+0200"></relative-time>
+              <img class="img" src="elements/art-therapy.jpg" alt="Art Therapy Image">
+              <p>Art therapy is gaining recognition for its therapeutic effects, helping people express emotions and improve mental well-being through creative expression.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=40">
+                <h1 class="tittle">NFTs: Revolutionizing Art Ownership and Sales</h1>
+              </a>
+              <relative-time time="Fri Sep 29 2024 20:10:24 GMT+0200"></relative-time>
+              <img class="img" src="elements/nft-art.jpg" alt="NFT Art Image">
+              <p>Non-fungible tokens (NFTs) are changing how artists sell and own art. This article explores how blockchain technology is creating new opportunities in the art world.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=41">
+                <h1 class="tittle">The Role of AI in Digital Art Creation</h1>
+              </a>
+              <relative-time time="Tue Oct 10 2024 11:45:30 GMT+0200"></relative-time>
+              <img class="img" src="elements/ai-digital-art.jpg" alt="AI Art Image">
+              <p>Artificial intelligence is now being used by artists to create digital art, blending creativity with technology. Find out how AI is shaping the future of digital art.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=42">
+                <h1 class="tittle">The Evolution of Photography as Fine Art</h1>
+              </a>
+              <relative-time time="Wed Oct 04 2024 13:27:48 GMT+0200"></relative-time>
+              <img class="img" src="elements/photography.jpg" alt="Photography Art Image">
+              <p>Photography has grown from a medium of documentation to an established fine art form. This piece explores its journey and place in today’s art world.</p>
+            </article>
+          </custom-article>
+        </div>
+      </main>
+      
+</body>
+</html>
+<script src="..\ccb.js"></script>

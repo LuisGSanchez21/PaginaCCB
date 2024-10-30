@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCB</title>
+    <link rel="stylesheet" href=".\ccb.css">
+
+</head>
+
+<body>
+    <custom-search>
+        <div class="logo ">
+            <button onclick="showHideSidebar()" id="menu-toggle" class="menu-toggle transparent">≡</button>
+            <span class="logo">
+                <span class="logo-item">C</span>
+                <span class="logo-item">C</span>
+                <span class="logo-item">B</span>
+            </span>
+            <button class="dialog-search transparent">🔍</button>
+        </div>
+
+        <dialog>
+            <button class="close-btn">🗙</button>
+            <h1>Search</h1>
+            <input type="search" id="site-search" name="q">
+            <ul id="search-results"></ul>
+            <template>
+                <li>
+                    <div class="flex flex-col items-center card">
+                        <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+                        <div class="flex flex-col justify-between">
+                            <h5 class="item-title">
+                                <a href="article.html?id={id}">
+                                    {value}
+                                </a>
+                            </h5>
+                            <p class="item-description">Here are the biggest enterprise technology acquisitions of
+                                2021 so far, in
+                                reverse chronological order.
+                            </p>
+                            <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
+                        </div>
+                    </div>
+                </li>
+            </template>
+        </dialog>
+    </custom-search>
+
+    <div class="toolbar">
+        <ul class="toolbar">
+            <li><a href=".\index.html" class="item-toolbar">Home</a></li>
+            <li><a href="sections/news.html" class="item-toolbar">News</a></li>
+            <li><a href="sections/sport.html" class="item-toolbar">Sport</a></li>
+            <li><a href="sections/business.html" class="item-toolbar">Business</a></li>
+            <li><a href="sections/innovation.html" class="item-toolbar">Innovation</a></li>
+            <li><a href="sections/culture.html" class="item-toolbar">Culture</a></li>
+            <li><a href="sections/arts.html" class="item-toolbar">Arts</a></li>
+            <li><a href="sections/travel.html" class="item-toolbar">Travel</a></li>
+        </ul>
+    </div>
+    </custom-header>
+
+    <sidebar class="menu-sidebar hidden" id="menu-sidebar">
+        <div>
+            <ul>
+                <li><a href="./index.html" class="item-toolbar">Home</a></li>
+                <li><a href="sections/news.html" class="item-toolbar">News</a></li>
+                <li><a href="sections/sport.html" class="item-toolbar">Sport</a></li>
+                <li><a href="sections/business.html" class="item-toolbar">Business</a></li>
+                <li><a href="sections/innovation.html" class="item-toolbar">Innovation</a></li>
+                <li><a href="sections/culture.html" class="item-toolbar">Culture</a></li>
+                <li><a href="sections/arts.html" class="item-toolbar">Arts</a></li>
+                <li><a href="sections/travel.html" class="item-toolbar">Travel</a></li>
+            </ul>
+        </div>
+    </sidebar>
+    <main class="flex">
+        <div class="grid-container">
+            <article class="grid-item">
+                <h1 class="tittle">
+                    <a href="index.html?id=1">The Rise of Electric Vehicles in 2024
+                    </a>
+                </h1>
+                <img class="img" src="elements/electricar.jpg" alt="Electric Vehicles Image">
+                <p>Electric vehicles are transforming the automotive industry. This article looks at the latest
+                    trends, innovations, and market shifts in the world of EVs.</p>
+                <relative-time time="Tue May 07 2024 00:00:00 GMT+0200"></relative-time>
+
+            </article>
+
+            <article class="grid-item">
+                <h1 class="tittle">
+                    <a href="article.html?id=2">How AI is Shaping the Future of Healthcare
+                    </a>
+                </h1>
+                <img class="img-robot" src="elements/robot.jpg" alt="AI in Healthcare Image">
+                <p>Artificial Intelligence is revolutionizing healthcare by improving diagnostics, treatment
+                    options, and patient care. Discover how AI is being used to save lives.</p>
+                <relative-time time="Thu Aug 29 2024 00:00:00 GMT+0200"></relative-time>
+
+            </article>
+
+
+            <article class="grid-item">
+                <h1 class="tittle">
+                    <a href="article.html?id=3">
+                        Exploring the Wonders of the Amazon Rainforest
+                    </a>
+                </h1>
+                <img class="img" src="elements/monkey-spin.gif" alt="Amazon Rainforest Image">
+                <p>A journey into the heart of the Amazon, exploring the incredible biodiversity and unique
+                    ecosystems that make it one of the most important regions on Earth.</p>
+                <relative-time time="Fri May 17 2024 00:00:00 GMT+0200"></relative-time>
+
+
+            </article>
+
+            <article class="grid-item">
+                <a href="article.html?id=4">
+                    <h1 class="tittle">Top 10 Destinations for Solo Travelers</h1>
+                </a>
+                <img class="img" src="elements\travel.jpg" alt="Solo Travel Image">
+                <p>Looking for your next solo adventure? Here are the top 10 destinations around the world perfect
+                    for
+                    solo travelers, offering safety, culture, and adventure.</p>
+                <relative-time time="Mon Dec 05 2022 00:00:00 GMT+0200"></relative-time>
+
+            </article>
+
+            <article class="grid-item">
+                <a href="index.html?id=5">
+                    <h1 class="tittle">The Fascinating World of Bioluminescent Organisms</h1>
+                </a>
+                <img class="img" src="elements\aliencito.gif" alt="Bioluminescent Organisms Image">
+                <p>Discover the enchanting beauty of bioluminescent organisms, from glowing jellyfish to fireflies,
+                    and learn how they produce light in the darkness of the ocean.</p>
+                <relative-time time="Thu Mar 16 2023 00:00:00 GMT+0200"></relative-time>
+
+            </article>
+
+            <article class="grid-item">
+                <a href="index.html?id=6">
+                    <h1 class="tittle">The Quirky History of Unusual Pets</h1>
+                </a>
+                <relative-time time="Mon Feb 13 2023 00:00:00 GMT+0200"></relative-time>
+                <img class="img" src="elements/stuip.gif" alt="Unusual Pets Image">
+                <p>From hedgehogs to tarantulas, dive into the quirky world of unusual pets and discover the
+                    fascinating stories behind their popularity.</p>
+                <relative-time time="Mon Feb 13 2023 00:00:00 GMT+0200"></relative-time>
+
+            </article>
+
+        </div>
+    </main>
+</body>
+</html>
+<script src=".\ccb.js"></script>

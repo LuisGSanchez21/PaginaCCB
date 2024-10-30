@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\ccb.css">
+</head>
+<body>
+    <custom-search>
+        <div class="logo ">
+            <button onclick="showHideSidebar()" id="menu-toggle" class="menu-toggle transparent">≡</button>
+            <span class="logo">
+                <span class="logo-item">C</span>
+                <span class="logo-item">C</span>
+                <span class="logo-item">B</span>
+            </span>
+            <button class="dialog-search transparent">🔍</button>
+        </div>
+        <dialog>
+            <button class="close-btn">🗙</button>
+            <h1>Search</h1>
+            <input type="search" id="site-search" name="q">
+            <template>
+                <li>
+                    <div class="main">
+                        <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg" />
+                        <div class="flex flex-col justify-between">
+                            <h5 class="item-title">{value}</h5>
+                            <p class="item-description">
+                            </p>
+                            <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200" />
+                            <ul id="search-results">
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </template>
+        </dialog>
+        </custom-search>
+
+        </dialog>
+        <div class="toolbar">
+            <ul class="toolbar">
+                <li><a href="../index.html" class="item-toolbar">Home</a></li>
+                <li><a href="news.html" class="item-toolbar">News</a></li>
+                <li><a href="sport.html" class="item-toolbar">Sport</a></li>
+                <li><a href="business.html" class="item-toolbar">Business</a></li>
+                <li><a href="innovation.html" class="item-toolbar">Innovation</a></li>
+                <li><a href="culture.html" class="item-toolbar">Culture</a></li>
+                <li><a href="arts.html" class="item-toolbar">Arts</a></li>
+                <li><a href="travel.html" class="item-toolbar">Travel</a></li>
+            </ul>
+        </div>
+
+    <sidebar class="menu-sidebar hidden" id="menu-sidebar">
+        <div>
+            <ul>
+                <li><a href="../index.html" class="item-toolbar">Home</a></li>
+                <li><a href="news.html" class="item-toolbar">News</a></li>
+                <li><a href="sport.html" class="item-toolbar">Sport</a></li>
+                <li><a href="business.html" class="item-toolbar">Business</a></li>
+                <li><a href="innovation.html" class="item-toolbar">Innovation</a></li>
+                <li><a href="culture.html" class="item-toolbar">Culture</a></li>
+                <li><a href="arts.html" class="item-toolbar">Arts</a></li>
+                <li><a href="travel.html" class="item-toolbar">Travel</a></li>
+            </ul>
+        </div>
+    </sidebar>
+    <main class="flex">
+        <div class="grid-container">
+          <custom-article class="grid-item text-left">
+            <article>
+              <h1 class="tittle">
+                <a href="../article.html?id=25">The Future of Renewable Energy: Innovations to Watch</a>
+              </h1>
+              <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200"></relative-time>
+              <img class="img" src="elements/renewable-energy.jpg" alt="Renewable Energy Image">
+              <p>From solar advancements to new battery technologies, renewable energy is evolving quickly. Here’s a look at the innovations set to change our world.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <h1 class="tittle">
+                <a href="../article.html?id=26">AI and Robotics in Healthcare: What’s Next?</a>
+              </h1>
+              <relative-time time="Tue Oct 17 2024 10:32:15 GMT+0200"></relative-time>
+              <img class="img" src="elements/ai-healthcare.jpg" alt="AI in Healthcare Image">
+              <p>Robotics and AI are transforming healthcare, making treatments faster and more personalized. Explore the latest breakthroughs in this field.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=27">
+                <h1 class="tittle">Quantum Computing: The Race to the Future</h1>
+              </a>
+              <relative-time time="Sun Oct 15 2024 16:45:12 GMT+0200"></relative-time>
+              <img class="img" src="elements/quantum-computing.jpg" alt="Quantum Computing Image">
+              <p>Quantum computing promises to solve complex problems beyond today’s technology. Learn about the companies and nations leading the charge.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=28">
+                <h1 class="tittle">Biotechnology in Agriculture: Feeding the Future</h1>
+              </a>
+              <relative-time time="Thu Sep 28 2024 08:54:03 GMT+0200"></relative-time>
+              <img class="img" src="elements/agriculture-biotech.jpg" alt="Biotechnology in Agriculture Image">
+              <p>With the world’s population growing, biotechnology is providing sustainable solutions in agriculture. Discover the innovations on the horizon.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=29">
+                <h1 class="tittle">The Role of VR in Future Workplaces</h1>
+              </a>
+              <relative-time time="Tue Oct 10 2024 12:12:00 GMT+0200"></relative-time>
+              <img class="img" src="elements/vr-workplace.jpg" alt="VR Workplace Image">
+              <p>As remote work grows, VR is offering immersive solutions to keep teams connected. Here’s how VR could transform work culture in the coming years.</p>
+            </article>
+          </custom-article>
+      
+          <custom-article class="grid-item">
+            <article>
+              <a href="../article.html?id=30">
+                <h1 class="tittle">Space Travel for Everyone: New Advances in 2024</h1>
+              </a>
+              <relative-time time="Wed Oct 04 2024 14:40:29 GMT+0200"></relative-time>
+              <img class="img" src="elements/space-travel.jpg" alt="Space Travel Image">
+              <p>Space tourism is becoming a reality with advancements in technology. Explore what the future holds for civilian space travel and exploration.</p>
+            </article>
+          </custom-article>
+        </div>
+      </main>
+      
+</body>
+</html>
+<script src="..\ccb.js"></script>
