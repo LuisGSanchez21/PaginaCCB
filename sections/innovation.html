@@ -7,37 +7,43 @@
     <link rel="stylesheet" href="..\ccb.css">
 </head>
 <body>
-    <custom-search>
-        <div class="logo ">
-            <button onclick="showHideSidebar()" id="menu-toggle" class="menu-toggle transparent">≡</button>
-            <span class="logo">
-                <span class="logo-item">C</span>
-                <span class="logo-item">C</span>
-                <span class="logo-item">B</span>
-            </span>
-            <button class="dialog-search transparent">🔍</button>
-        </div>
-        <dialog>
-            <button class="close-btn">🗙</button>
-            <h1>Search</h1>
-            <input type="search" id="site-search" name="q">
-            <template>
-                <li>
-                    <div class="main">
-                        <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg" />
-                        <div class="flex flex-col justify-between">
-                            <h5 class="item-title">{value}</h5>
-                            <p class="item-description">
-                            </p>
-                            <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200" />
-                            <ul id="search-results">
-                            </ul>
-                        </div>
+  <custom-search>
+    <div class="logo ">
+        <button onclick="showHideSidebar()" id="menu-toggle" class="menu-toggle transparent">≡</button>
+        <span class="logo">
+            <span class="logo-item">C</span>
+            <span class="logo-item">C</span>
+            <span class="logo-item">B</span>
+        </span>
+        <button class="dialog-search transparent">🔍</button>
+    </div>
+
+    <dialog>
+        <button class="close-btn">🗙</button>
+        <h1>Search</h1>
+        <input type="search" id="site-search" name="q">
+        <ul id="search-results"></ul>
+        <template>
+            <li>
+                <div class="flex flex-col items-center card">
+                    <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+                    <div class="flex flex-col justify-between">
+                        <h5 class="item-title">
+                            <a href="article.html?id={id}">
+                                {value}
+                            </a>
+                        </h5>
+                        <p class="item-description">Here are the biggest enterprise technology acquisitions of
+                            2021 so far, in
+                            reverse chronological order.
+                        </p>
+                        <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
                     </div>
-                </li>
-            </template>
-        </dialog>
-        </custom-search>
+                </div>
+            </li>
+        </template>
+    </dialog>
+</custom-search>
 
         </dialog>
         <div class="toolbar">
@@ -74,9 +80,10 @@
               <h1 class="tittle">
                 <a href="../article.html?id=25">The Future of Renewable Energy: Innovations to Watch</a>
               </h1>
-              <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200"></relative-time>
-              <img class="img" src="elements/renewable-energy.jpg" alt="Renewable Energy Image">
+              <img class="img" src="../elements/renewable-energy.jpg" alt="Renewable Energy Image">
               <p>From solar advancements to new battery technologies, renewable energy is evolving quickly. Here’s a look at the innovations set to change our world.</p>
+              <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200"></relative-time>
+
             </article>
           </custom-article>
       
@@ -86,8 +93,10 @@
                 <a href="../article.html?id=26">AI and Robotics in Healthcare: What’s Next?</a>
               </h1>
               <relative-time time="Tue Oct 17 2024 10:32:15 GMT+0200"></relative-time>
-              <img class="img" src="elements/ai-healthcare.jpg" alt="AI in Healthcare Image">
+              <img class="img" src="../elements/ai-healthcare.jpg" alt="AI in Healthcare Image">
               <p>Robotics and AI are transforming healthcare, making treatments faster and more personalized. Explore the latest breakthroughs in this field.</p>
+              <relative-time time="Tue Oct 17 2024 10:32:15 GMT+0200"></relative-time>
+
             </article>
           </custom-article>
       
@@ -96,9 +105,10 @@
               <a href="../article.html?id=27">
                 <h1 class="tittle">Quantum Computing: The Race to the Future</h1>
               </a>
-              <relative-time time="Sun Oct 15 2024 16:45:12 GMT+0200"></relative-time>
-              <img class="img" src="elements/quantum-computing.jpg" alt="Quantum Computing Image">
+              <img class="img" src="../elements/quantum-computing.jpg" alt="Quantum Computing Image">
               <p>Quantum computing promises to solve complex problems beyond today’s technology. Learn about the companies and nations leading the charge.</p>
+              <relative-time time="Sun Oct 15 2024 16:45:12 GMT+0200"></relative-time>
+
             </article>
           </custom-article>
       
@@ -107,9 +117,10 @@
               <a href="../article.html?id=28">
                 <h1 class="tittle">Biotechnology in Agriculture: Feeding the Future</h1>
               </a>
-              <relative-time time="Thu Sep 28 2024 08:54:03 GMT+0200"></relative-time>
-              <img class="img" src="elements/agriculture-biotech.jpg" alt="Biotechnology in Agriculture Image">
+              <img class="img" src="../elements/agriculture-biotech.jpg" alt="Biotechnology in Agriculture Image">
               <p>With the world’s population growing, biotechnology is providing sustainable solutions in agriculture. Discover the innovations on the horizon.</p>
+              <relative-time time="Thu Sep 28 2024 08:54:03 GMT+0200"></relative-time>
+
             </article>
           </custom-article>
       
@@ -119,8 +130,10 @@
                 <h1 class="tittle">The Role of VR in Future Workplaces</h1>
               </a>
               <relative-time time="Tue Oct 10 2024 12:12:00 GMT+0200"></relative-time>
-              <img class="img" src="elements/vr-workplace.jpg" alt="VR Workplace Image">
+              <img class="img" src="../elements/vr-workplace.jpg" alt="VR Workplace Image">
               <p>As remote work grows, VR is offering immersive solutions to keep teams connected. Here’s how VR could transform work culture in the coming years.</p>
+              <relative-time time="Tue Oct 10 2024 12:12:00 GMT+0200"></relative-time>
+
             </article>
           </custom-article>
       
@@ -129,9 +142,10 @@
               <a href="../article.html?id=30">
                 <h1 class="tittle">Space Travel for Everyone: New Advances in 2024</h1>
               </a>
-              <relative-time time="Wed Oct 04 2024 14:40:29 GMT+0200"></relative-time>
-              <img class="img" src="elements/space-travel.jpg" alt="Space Travel Image">
+              <img class="img" src="../elements/space-travel.jpg" alt="Space Travel Image">
               <p>Space tourism is becoming a reality with advancements in technology. Explore what the future holds for civilian space travel and exploration.</p>
+              <relative-time time="Wed Oct 04 2024 14:40:29 GMT+0200"></relative-time>
+
             </article>
           </custom-article>
         </div>

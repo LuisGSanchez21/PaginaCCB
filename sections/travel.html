@@ -7,37 +7,43 @@
     <link rel="stylesheet" href="..\ccb.css">
 </head>
 <body>
-    <custom-search>
-        <div class="logo ">
-            <button onclick="showHideSidebar()" id="menu-toggle" class="menu-toggle transparent">≡</button>
-            <span class="logo">
-                <span class="logo-item">C</span>
-                <span class="logo-item">C</span>
-                <span class="logo-item">B</span>
-            </span>
-            <button class="dialog-search transparent">🔍</button>
-        </div>
-        <dialog>
-            <button class="close-btn">🗙</button>
-            <h1>Search</h1>
-            <input type="search" id="site-search" name="q">
-            <template>
-                <li>
-                    <div class="main">
-                        <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg" />
-                        <div class="flex flex-col justify-between">
-                            <h5 class="item-title">{value}</h5>
-                            <p class="item-description">
-                            </p>
-                            <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200" />
-                            <ul id="search-results">
-                            </ul>
-                        </div>
+  <custom-search>
+    <div class="logo ">
+        <button onclick="showHideSidebar()" id="menu-toggle" class="menu-toggle transparent">≡</button>
+        <span class="logo">
+            <span class="logo-item">C</span>
+            <span class="logo-item">C</span>
+            <span class="logo-item">B</span>
+        </span>
+        <button class="dialog-search transparent">🔍</button>
+    </div>
+
+    <dialog>
+        <button class="close-btn">🗙</button>
+        <h1>Search</h1>
+        <input type="search" id="site-search" name="q">
+        <ul id="search-results"></ul>
+        <template>
+            <li>
+                <div class="flex flex-col items-center card">
+                    <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+                    <div class="flex flex-col justify-between">
+                        <h5 class="item-title">
+                            <a href="article.html?id={id}">
+                                {value}
+                            </a>
+                        </h5>
+                        <p class="item-description">Here are the biggest enterprise technology acquisitions of
+                            2021 so far, in
+                            reverse chronological order.
+                        </p>
+                        <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
                     </div>
-                </li>
-            </template>
-        </dialog>
-        </custom-search>
+                </div>
+            </li>
+        </template>
+    </dialog>
+</custom-search>
 
         </dialog>
         <div class="toolbar">
@@ -74,9 +80,10 @@
               <h1 class="tittle">
                 <a href="../article.html?id=43">Top Winter Destinations for 2024 Revealed</a>
               </h1>
-              <relative-time time="Wed Oct 11 2024 10:30:21 GMT+0200"></relative-time>
-              <img class="img" src="elements/winter-destinations.jpg" alt="Winter Destinations Image">
+              <img class="img" src="../elements/winter-destinations.jpg" alt="Winter Destinations Image">
               <p>As the colder months approach, discover the best winter travel spots of 2024, featuring scenic snow-covered landscapes and cozy getaways.</p>
+              <relative-time time="Wed Oct 11 2024 10:30:21 GMT+0200"></relative-time>
+
             </article>
           </custom-article>
       
@@ -85,9 +92,9 @@
               <h1 class="tittle">
                 <a href="../article.html?id=44">Exploring the Hidden Gems of Southeast Asia</a>
               </h1>
-              <relative-time time="Tue Oct 10 2024 08:15:45 GMT+0200"></relative-time>
-              <img class="img" src="elements/southeast-asia.jpg" alt="Southeast Asia Image">
+              <img class="img" src="../elements/southeast-asia.jpg" alt="Southeast Asia Image">
               <p>From secluded beaches to vibrant markets, Southeast Asia offers incredible off-the-beaten-path experiences for travelers seeking adventure.</p>
+              <relative-time time="Tue Oct 10 2024 08:15:45 GMT+0200"></relative-time>
             </article>
           </custom-article>
       
@@ -97,7 +104,7 @@
                 <h1 class="tittle">Why Solo Travel is Booming in 2024</h1>
               </a>
               <relative-time time="Mon Oct 09 2024 17:00:12 GMT+0200"></relative-time>
-              <img class="img" src="elements/solo-travel.jpg" alt="Solo Travel Image">
+              <img class="img" src="../elements/solo-travel.jpg" alt="Solo Travel Image">
               <p>The rise of solo travel continues in 2024, as individuals worldwide seek independence and personal growth through unique travel experiences.</p>
             </article>
           </custom-article>
@@ -107,9 +114,9 @@
               <a href="../article.html?id=46">
                 <h1 class="tittle">The Best Eco-Friendly Resorts to Visit</h1>
               </a>
-              <relative-time time="Sun Oct 08 2024 14:45:03 GMT+0200"></relative-time>
-              <img class="img" src="elements/eco-resorts.jpg" alt="Eco-Friendly Resorts Image">
+              <img class="img" src="../elements/eco-resorts.jpg" alt="Eco-Friendly Resorts Image">
               <p>Explore stunning eco-resorts that offer luxurious accommodations while committing to sustainability and environmental preservation.</p>
+              <relative-time time="Sun Oct 08 2024 14:45:03 GMT+0200"></relative-time>
             </article>
           </custom-article>
       
@@ -118,9 +125,10 @@
               <a href="../article.html?id=47">
                 <h1 class="tittle">City Guides: Discovering Tokyo Beyond the Usual Spots</h1>
               </a>
-              <relative-time time="Fri Oct 06 2024 19:25:00 GMT+0200"></relative-time>
-              <img class="img" src="elements/tokyo.jpg" alt="Tokyo City Image">
+              <img class="img" src="../elements/tokyo.jpg" alt="Tokyo City Image">
               <p>A guide to Tokyo’s hidden neighborhoods and unique experiences that take travelers beyond the well-known tourist attractions.</p>
+              <relative-time time="Fri Oct 06 2024 19:25:00 GMT+0200"></relative-time>
+
             </article>
           </custom-article>
       
@@ -129,9 +137,9 @@
               <a href="../article.html?id=48">
                 <h1 class="tittle">Backpacking Through South America's Natural Wonders</h1>
               </a>
-              <relative-time time="Thu Oct 05 2024 09:30:29 GMT+0200"></relative-time>
-              <img class="img" src="elements/south-america.jpg" alt="South America Backpacking Image">
+              <img class="img" src="../elements/south-america.jpg" alt="South America Backpacking Image">
               <p>Journey through South America’s breathtaking paradise</p>
+              <relative-time time="Thu Oct 05 2024 09:30:29 GMT+0200"></relative-time>
             </article>
           </custom-article>
         </div>

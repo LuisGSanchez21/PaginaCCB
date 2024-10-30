@@ -7,37 +7,43 @@
     <link rel="stylesheet" href="..\ccb.css">
 </head>
 <body>
-    <custom-header>
-        <div class="logo ">
-            <button onclick="showHideSidebar()" id="menu-toggle" class="menu-toggle transparent">≡</button>
-            <span class="logo">
-                <span class="logo-item">C</span>
-                <span class="logo-item">C</span>
-                <span class="logo-item">B</span>
-            </span>
-            <button class="dialog-search transparent">🔍</button>
-        </div>
-        <dialog>
-            <button class="close-btn">🗙</button>
-            <h1>Search</h1>
-            <input type="search" id="site-search" name="q">
-            <template>
-                <li>
-                    <div class="main">
-                        <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg" />
-                        <div class="flex flex-col justify-between">
-                            <h5 class="item-title">{value}</h5>
-                            <p class="item-description">
-                            </p>
-                            <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200" />
-                            <ul id="search-results">
-                            </ul>
-                        </div>
+  <custom-search>
+    <div class="logo ">
+        <button onclick="showHideSidebar()" id="menu-toggle" class="menu-toggle transparent">≡</button>
+        <span class="logo">
+            <span class="logo-item">C</span>
+            <span class="logo-item">C</span>
+            <span class="logo-item">B</span>
+        </span>
+        <button class="dialog-search transparent">🔍</button>
+    </div>
+
+    <dialog>
+        <button class="close-btn">🗙</button>
+        <h1>Search</h1>
+        <input type="search" id="site-search" name="q">
+        <ul id="search-results"></ul>
+        <template>
+            <li>
+                <div class="flex flex-col items-center card">
+                    <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+                    <div class="flex flex-col justify-between">
+                        <h5 class="item-title">
+                            <a href="article.html?id={id}">
+                                {value}
+                            </a>
+                        </h5>
+                        <p class="item-description">Here are the biggest enterprise technology acquisitions of
+                            2021 so far, in
+                            reverse chronological order.
+                        </p>
+                        <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
                     </div>
-                </li>
-            </template>
-        </dialog>
-        </custom-header>
+                </div>
+            </li>
+        </template>
+    </dialog>
+</custom-search>
 
         </dialog>
         <div class="toolbar">
@@ -74,9 +80,9 @@
               <h1 class="tittle">
                 <a href="../article.html?id=31">Reviving Ancient Art Forms in Modern Times</a>
               </h1>
-              <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200"></relative-time>
               <img class="img" src="elements/ancient-art.jpg" alt="Ancient Art Image">
               <p>Explore how artists today are drawing inspiration from ancient techniques to create works that bridge the past and present.</p>
+              <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200"></relative-time>
             </article>
           </custom-article>
       
@@ -85,9 +91,9 @@
               <h1 class="tittle">
                 <a href="../article.html?id=32">The Resurgence of Vinyl in Digital Age</a>
               </h1>
-              <relative-time time="Thu Oct 12 2024 09:32:12 GMT+0200"></relative-time>
               <img class="img" src="..\elements/vinyl.jpg" alt="Vinyl Records Image">
               <p>Vinyl records are making a comeback as collectors and young music fans alike celebrate analog sound. Discover the reasons behind its resurgence.</p>
+              <relative-time time="Thu Oct 12 2024 09:32:12 GMT+0200"></relative-time> 
             </article>
           </custom-article>
       
@@ -96,9 +102,10 @@
               <a href="../article.html?id=33">
                 <h1 class="tittle">Street Art Festivals Around the World</h1>
               </a>
-              <relative-time time="Mon Oct 09 2024 15:18:45 GMT+0200"></relative-time>
               <img class="img" src="..\elements/street-art.jpg" alt="Street Art Image">
               <p>Street art has evolved into a respected global movement. Take a look at some of the most iconic festivals celebrating this form of cultural expression.</p>
+              <relative-time time="Mon Oct 09 2024 15:18:45 GMT+0200"></relative-time>
+
             </article>
           </custom-article>
       
@@ -107,9 +114,10 @@
               <a href="../article.html?id=34">
                 <h1 class="tittle">The Power of Storytelling in Modern Cinema</h1>
               </a>
-              <relative-time time="Fri Sep 29 2024 20:10:24 GMT+0200"></relative-time>
               <img class="img" src="..\elements/cinema.jpg" alt="Cinema Storytelling Image">
               <p>As cinema evolves, the art of storytelling remains central. This article examines how filmmakers are pushing the boundaries of narrative structure.</p>
+              <relative-time time="Fri Sep 29 2024 20:10:24 GMT+0200"></relative-time>
+
             </article>
           </custom-article>
       
@@ -118,9 +126,10 @@
               <a href="../article.html?id=35">
                 <h1 class="tittle">Preserving Indigenous Languages Through Art</h1>
               </a>
-              <relative-time time="Tue Oct 10 2024 11:45:30 GMT+0200"></relative-time>
               <img class="img" src="..\elements\indigenous.jpg" alt="Indigenous Art Image">
               <p>Indigenous communities are using art to revitalize and preserve languages at risk of extinction. Discover the artists leading this cultural movement.</p>
+              <relative-time time="Tue Oct 10 2024 11:45:30 GMT+0200"></relative-time>
+
             </article>
           </custom-article>
       
@@ -129,9 +138,10 @@
               <a href="../article.html?id=36">
                 <h1 class="tittle">Music and Memory: How Songs Shape Our Lives</h1>
               </a>
-              <relative-time time="Wed Oct 04 2024 13:27:48 GMT+0200"></relative-time>
+              
               <img class="img" src="..\elements/music-memory.jpg" alt="Music and Memory Image">
               <p>Music has a unique power to evoke memories and emotions. This article explores how songs become deeply tied to our personal experiences and identities.</p>
+              <relative-time time="Wed Oct 04 2024 13:27:48 GMT+0200"></relative-time>
             </article>
           </custom-article>
         </div>

@@ -17,28 +17,34 @@
         </span>
         <button class="dialog-search transparent">🔍</button>
     </div>
+
     <dialog>
         <button class="close-btn">🗙</button>
         <h1>Search</h1>
         <input type="search" id="site-search" name="q">
+        <ul id="search-results"></ul>
         <template>
             <li>
-                <div class="main">
-                    <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg" />
+                <div class="flex flex-col items-center card">
+                    <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
                     <div class="flex flex-col justify-between">
-                        <h5 class="item-title">{value}</h5>
-                        <p class="item-description">
+                        <h5 class="item-title">
+                            <a href="article.html?id={id}">
+                                {value}
+                            </a>
+                        </h5>
+                        <p class="item-description">Here are the biggest enterprise technology acquisitions of
+                            2021 so far, in
+                            reverse chronological order.
                         </p>
-                        <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200" />
-                        <ul id="search-results">
-                        </ul>
+                        <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
                     </div>
                 </div>
             </li>
         </template>
     </dialog>
-    </custom-search>
-    
+</custom-search>
+
   </dialog>
   <div class="toolbar">
       <ul class="toolbar">
@@ -75,9 +81,10 @@
               <h1 class="tittle">
                 <a href="../article.html?id=19">Green Investing: A Growing Trend in 2024</a>
               </h1>
-              <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200"></relative-time>
-              <img class="img" src="elements/green-investing.jpg" alt="Green Investing Image">
+              <img class="img" src="../elements/green-investing.jpg" alt="Green Investing Image">
               <p>As climate concerns grow, investors are pouring funds into sustainable companies. Discover how green investing is shaping global markets and influencing the future of finance.</p>
+              <relative-time time="Wed Oct 23 2024 14:54:36 GMT+0200"></relative-time>
+
             </article>
           </custom-article>
       
@@ -86,9 +93,10 @@
               <h1 class="tittle">
                 <a href="../article.html?id=20">The Rise of Remote Work Technology Firms</a>
               </h1>
-              <relative-time time="Thu Oct 12 2024 09:32:12 GMT+0200"></relative-time>
-              <img class="img" src="elements/remote-work.jpg" alt="Remote Work Image">
+              <img class="img" src="../elements/remote-work.jpg" alt="Remote Work Image">
               <p>As remote work becomes the norm, tech companies specializing in collaboration tools are thriving. Learn about the top firms revolutionizing work-from-home dynamics.</p>
+              <relative-time time="Thu Oct 12 2024 09:32:12 GMT+0200"></relative-time>
+
             </article>
           </custom-article>
       
@@ -98,7 +106,7 @@
                 <h1 class="tittle">Blockchain’s Impact on Global Supply Chains</h1>
               </a>
               <relative-time time="Mon Oct 09 2024 15:18:45 GMT+0200"></relative-time>
-              <img class="img" src="elements/blockchain.jpg" alt="Blockchain Image">
+              <img class="img" src="../elements/blockchain.jpg" alt="Blockchain Image">
               <p>Blockchain technology is enhancing transparency and efficiency in global supply chains. This article delves into how it’s transforming logistics and commerce.</p>
             </article>
           </custom-article>
@@ -108,9 +116,10 @@
               <a href="../article.html?id=22">
                 <h1 class="tittle">Startup Funding Trends: What to Expect in 2025</h1>
               </a>
-              <relative-time time="Fri Sep 29 2024 20:10:24 GMT+0200"></relative-time>
-              <img class="img" src="elements/startup-funding.jpg" alt="Startup Funding Image">
+              <img class="img" src="../elements/startup-funding.jpg" alt="Startup Funding Image">
               <p>As economic shifts continue, startup funding patterns are changing. Explore what’s next for venture capital and private equity in 2025 and beyond.</p>
+              <relative-time time="Fri Sep 29 2024 20:10:24 GMT+0200"></relative-time>
+
             </article>
           </custom-article>
       
@@ -119,9 +128,10 @@
               <a href="../article.html?id=23">
                 <h1 class="tittle">The Influence of AI on Financial Markets</h1>
               </a>
-              <relative-time time="Tue Oct 10 2024 11:45:30 GMT+0200"></relative-time>
-              <img class="img" src="elements/ai-finance.jpg" alt="AI in Finance Image">
+              <img class="img" src="../elements/ai-finance.jpg" alt="AI in Finance Image">
               <p>Artificial intelligence is revolutionizing financial markets, from trading algorithms to investment analytics. Learn how AI is reshaping the future of finance.</p>
+              <relative-time time="Tue Oct 10 2024 11:45:30 GMT+0200"></relative-time>
+
             </article>
           </custom-article>
       
@@ -130,9 +140,10 @@
               <a href="../article.html?id=24">
                 <h1 class="tittle">The Global Expansion of E-commerce in Emerging Markets</h1>
               </a>
-              <relative-time time="Wed Oct 04 2024 13:27:48 GMT+0200"></relative-time>
-              <img class="img" src="elements/ecommerce.jpg" alt="E-commerce Image">
+              <img class="img" src="../elements/ecommerce.jpg" alt="E-commerce Image">
               <p>E-commerce is experiencing unprecedented growth in emerging markets. Discover the key factors driving this expansion and the major players involved.</p>
+              <relative-time time="Wed Oct 04 2024 13:27:48 GMT+0200"></relative-time>
+
             </article>
           </custom-article>
         </div>
